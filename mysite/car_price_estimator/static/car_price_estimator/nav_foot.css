@@ -1,0 +1,61 @@
+/* Set default margin and padding to 0 for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Style for the main content */
+main {
+    margin: 20px;
+    flex: 1;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}

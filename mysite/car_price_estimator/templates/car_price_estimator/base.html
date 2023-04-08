@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Car Price Estimator</title>
+    <link rel="stylesheet" href="{% static 'car_price_estimator/nav_foot.css' %}">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{% url 'car_price_estimator:index' %}">Home</a></li>
+            <li><a href="{% url 'car_price_estimator:about' %}">About</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    {% block content %}
+
+
+    {% endblock %}
+
+    <footer>
+        <p>&copy; 2023 Car Price Estimator. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{% extends "car_price_estimator/base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'car_price_estimator/about.css' %}">
+
+
+
+<div class="container">
+    <p class="text">Welcome to our website, where you can predict the price of cars using machine learning algorithms.
+        Our site uses
+        a trained model to predict the price of a car based on its features such as fuel type, gearbox, brand, model,
+        body type, color, and powertrain.</p>
+    <p class="text">To use our prediction service, simply enter the features of the car you want to predict the price
+        for and hit the
+        "Predict" button. Our model will then calculate the predicted price based on the entered features.</p>
+    <p class="text">We aim to provide a reliable and accurate car price prediction service that can help both car buyers
+        and sellers
+        make informed decisions. Thank you for choosing our website for your car price prediction needs.</p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "car_price_estimator/base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'car_price_estimator/result.css' %}">
+
+
+<!-- <div class="container">
+    <div class="result">
+        <h2>The estimated price of your car is:</h2>
+        <p class="price">{{ estimated_price }} AZN</p>
+    </div>
+</div> -->
+
+
+<div class="container mt-5">
+    <div class="card text-center">
+        <div class="card-header">
+            <h5>Estimated Price</h5>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">{{ estimated_price }} AZN</h2>
+            <p class="card-text">Congratulations, you have predicted the price of your {{ body_type }}
+                {{ brand }} {{ model }}!</p>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
